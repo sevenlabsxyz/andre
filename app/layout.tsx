@@ -10,15 +10,15 @@ import { doge } from "./doge";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Andre Neves's blog",
+  title: "André Neves",
   description:
-    "Andre Neves is the CEO and founder of Vercel, a software engineer, and the creator of Next.js, Mongoose, Socket.io and other open source libraries.",
+    "André Neves is the CTO and Founder of ZBD, a software and product engineer, Partnerships lead at Vinteum, Head of Open Source at NBD, and the creator of Lightning Address and other open source libraries.",
   openGraph: {
-    title: "Andre Nevesg's blog",
+    title: "André Neves",
     description:
-      "Andre Neves is the CEO and founder of Vercel, a software engineer, and the creator of Next.js, Mongoose, Socket.io and other open source libraries.",
+      "André Neves is the CTO and Founder of ZBD, a software and product engineer, Partnerships lead at Vinteum, Head of Open Source at NBD, and the creator of Lightning Address and other open source libraries.",
     url: "https://andreneves.co",
-    siteName: "Andre Nevesg's blog",
+    siteName: "André Neves",
   },
   twitter: {
     card: "summary_large_image",

@@ -17,15 +17,15 @@ export const metadata = {
     title: "Andre Nevesg's blog",
     description:
       "Andre Neves is the CEO and founder of Vercel, a software engineer, and the creator of Next.js, Mongoose, Socket.io and other open source libraries.",
-    url: "https://rauchg.com",
+    url: "https://andreneves.co",
     siteName: "Andre Nevesg's blog",
   },
   twitter: {
     card: "summary_large_image",
-    site: "@rauchg",
-    creator: "@rauchg",
+    site: "@andreneves",
+    creator: "@andreneves",
   },
-  metadataBase: new URL("https://rauchg.com"),
+  metadataBase: new URL("https://andreneves.co"),
 };
 
 export const viewport = {

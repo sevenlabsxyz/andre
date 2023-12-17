@@ -50,7 +50,7 @@ export async function GET(_req: Request, { params: { id } }) {
             Andre Neves
           </div>
           <div tw="grow" />
-          <div tw="text-[28px]">rauchg.com</div>
+          <div tw="text-[28px]">andreneves.co</div>
         </header>
 
         <main tw="flex grow pb-3 flex-col items-center justify-center">

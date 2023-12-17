@@ -1,74 +1,64 @@
 {
   "posts": [
     {
-      "id": "making-the-web-faster",
-      "date": "June 23, 2021",
-      "title": "Making the Web. Faster."
+      "id": "lightning-network-development-for-modern-applications",
+      "date": "August 21, 2018",
+      "title": "Lightning Network Development for Modern Applications"
     },
     {
-      "id": "next-for-vercel",
-      "date": "December 16, 2020",
-      "title": "Next for Vercel"
+      "id": "tooling-for-invoices-in-lightning-network-applications",
+      "date": "August 21, 2018",
+      "title": "Tooling for Invoices in Lightning Network Applications"
     },
     {
-      "id": "books-people-reread",
-      "date": "August 2, 2020",
-      "title": "Books people re-read"
+      "id": "announcing-zbd-gg",
+      "date": "August 21, 2020",
+      "title": "Announcing zbd.gg"
     },
     {
-      "id": "develop-preview-test",
-      "date": "June 11, 2020",
-      "title": "Develop, Preview, Test"
+      "id": "lightning-address",
+      "date": "August 21, 2021",
+      "title": "Introducing the Lightning Address"
     },
     {
-      "id": "static-hoisting",
-      "date": "May 2, 2020",
-      "title": "Static Hoisting"
+      "id": "mit-bitcoin-expo-2022",
+      "date": "June 5, 2022",
+      "title": "MIT Bitcoin Expo 2022"
     },
     {
-      "id": "an-ode-to-code-golf",
-      "date": "April 26, 2020",
-      "title": "An ode to code golf"
+      "id": "mit-bitcoin-expo-2023",
+      "date": "June 5, 2023",
+      "title": "MIT Bitcoin Expo 2022"
     },
     {
-      "id": "vercel",
-      "date": "April 21, 2020",
-      "title": "Vercel"
+      "id": "setup-nostr-relay",
+      "date": "January 5, 2022",
+      "title": "Setup a Nostr Relay"
     },
     {
-      "id": "2019-in-review",
-      "date": "January 2, 2020",
-      "title": "2019 in Review"
+      "id": "tabconf-2023-keynote",
+      "date": "May 5, 2022",
+      "title": "TabConf 2022 Keynote"
     },
     {
-      "id": "its-hard-to-forego-efficiency",
-      "date": "March 28, 2017",
-      "title": "It's Hard to Forego Efficiency"
+      "id": "paid-nostr-relay",
+      "date": "May 5, 2023",
+      "title": "Paid Nostr Relay"
     },
     {
-      "id": "2016-in-review",
-      "date": "January 6, 2017",
-      "title": "2016 in Review"
+      "id": "rise-of-paid-nostr-relays",
+      "date": "May 5, 2023",
+      "title": "Rise of Paid Nostr Relays"
     },
     {
-      "id": "addressable-errors",
-      "date": "February 4, 2016",
-      "title": "Addressable Errors"
+      "id": "replit-zbd-starter-kit",
+      "date": "May 5, 2023",
+      "title": "Replit and ZBD Starter Kit"
     },
     {
-      "id": "pure-ui",
-      "date": "July 13, 2015",
-      "title": "Pure UI"
-    },
-    {
-      "id": "ecmascript-6",
-      "date": "February 22, 2015",
-      "title": "ECMAScript 6"
-    },
-    {
-      "id": "7-principles-of-rich-web-applications",
-      "date": "November 4, 2014",
-      "title": "7 Principles of Rich Web Applications"
+      "id": "satsconf-2023",
+      "date": "November 5, 2023",
+      "title": "SatsConf 2023"
     }
   ]
 }

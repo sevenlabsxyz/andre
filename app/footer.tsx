@@ -10,11 +10,7 @@ export function Footer() {
         </A>
         )
       </div>
-      <div>
-        <A target="_blank" href="https://github.com/sevenlabsxyz/andre">
-          Source
-        </A>
-      </div>
+      <div></div>
     </footer>
   );
 }

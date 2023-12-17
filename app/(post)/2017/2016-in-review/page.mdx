@@ -1,12 +1,13 @@
 export const metadata = {
-  title: '2016 in Review',
-  description: 'A brief summary of my year organized by different categories.',
+  title: "2016 in Review",
+  description: "A brief summary of my year organized by different categories.",
   openGraph: {
-    title: '2016 in Review',
-    description: 'A brief summary of my year organized by different categories.',
-    images: [{ url: '/og/2016-in-review' }],
-  }
-}
+    title: "2016 in Review",
+    description:
+      "A brief summary of my year organized by different categories.",
+    images: [{ url: "/og/2016-in-review" }],
+  },
+};
 
 What follows is a brief summary of my year organized by different categories.
 
@@ -23,15 +24,15 @@ Our mission is to empower the individual. At home or inside companies and teams.
 
 ### Now [#now]
 
-Back in April we [announced](https://zeit.co/blog/why-now) our flagship product: [now](https://zeit.co/now). Once you [install](https://zeit.co/download) it, you can deploy any project to the cloud with *just one command*: `now`.
+Back in April we [announced](https://zeit.co/blog/why-now) our flagship product: [now](https://zeit.co/now). Once you [install](https://zeit.co/download) it, you can deploy any project to the cloud with _just one command_: `now`.
 
 We take the `package.json`, `Dockerfile`, or static files, build them in the cloud and serve them securely and scalably under HTTP/2.
 
 Each deployment is **immutable** and has its own unique URL. They look like this: `https://rauchg-blog-hhafwnefgw.now.sh/`. This model has a lot of benefits that are not immediately obvious.
 
-One is that the same system gives you development, staging and production all in one. You can deploy to build, test and iterate during development. You can *stage* by simply sharing these links to your co-workers or clients, before you make them live.
+One is that the same system gives you development, staging and production all in one. You can deploy to build, test and iterate during development. You can _stage_ by simply sharing these links to your co-workers or clients, before you make them live.
 
-To go to production, you just *alias* them. With one command, obviously: `now alias rauchg-blog-hhafwnefgw.now.sh rauchg.com` is what I ran for you to be reading these words now. Zero-downtime.
+To go to production, you just _alias_ them. With one command, obviously: `now alias rauchg-blog-hhafwnefgw.now.sh rauchg.com` is what I ran for you to be reading these words now. Zero-downtime.
 
 Some milestones we've reached:
 
@@ -45,7 +46,7 @@ Some milestones we've reached:
 
 Dealing with SSL certificates, domains and DNS records is a very tedious process.
 
-It's tedious for the individual but it's also tedious for teams. I've been in too many companies where you depend on a specific *person or team* to manage this stuff.
+It's tedious for the individual but it's also tedious for teams. I've been in too many companies where you depend on a specific _person or team_ to manage this stuff.
 
 Processes like that kill productivity and create invisible barriers for product engineers. Worse yet, after a while you just get used to it.
 
@@ -70,11 +71,12 @@ Why productive? Because [text is king](http://graydon2.dreamwidth.org/193447.htm
 Since it's built on Electron, we're able to render URLs as sandboxed `<webview>` tags. For some people, this could develop into an interesting [standalone computing environment](https://zeit.co/blog/the-hyper-plan).
 
 Some milestones we've reached:
+
 - **300,000+** downloads, **13,000+** stars on [GitHub](https://github.com/zeit/hyper)
 - **300+** [plugins](https://github.com/bnb/awesome-hyper) and [themes](https://hyperthemes.matthi.coffee/)
-- People are exploring new CLI dimensions with plugins like [HTML rendering](https://twitter.com/HyperThemes/status/813397627588972544), [charts](https://twitter.com/mathisonian/status/765275585102876672), [status lines](https://twitter.com/rauchg/status/813920434081001472) and many others.
-- Launched it on [Windows](https://twitter.com/nolanlawson/status/808412183121887233) and [Linux](https://twitter.com/fdidron/status/815143883751362560), following our success on [macOS](https://twitter.com/rauchg/status/807368146977857536)
-- Already faster than *native* terminals across [some](https://twitter.com/rauchg/status/758125063002427392) [benchmarks](https://twitter.com/rauchg/status/808353136926593024). Working on improving them all.
+- People are exploring new CLI dimensions with plugins like [HTML rendering](https://twitter.com/HyperThemes/status/813397627588972544), [charts](https://twitter.com/mathisonian/status/765275585102876672), [status lines](https://twitter.com/andreneves/status/813920434081001472) and many others.
+- Launched it on [Windows](https://twitter.com/nolanlawson/status/808412183121887233) and [Linux](https://twitter.com/fdidron/status/815143883751362560), following our success on [macOS](https://twitter.com/andreneves/status/807368146977857536)
+- Already faster than _native_ terminals across [some](https://twitter.com/andreneves/status/758125063002427392) [benchmarks](https://twitter.com/andreneves/status/808353136926593024). Working on improving them all.
 
 ### Next.js [#next]
 
@@ -138,13 +140,13 @@ Finally, if we accept this analogy, we can't underestimate the impact that fast,
 
 One of the obvious objections to Bitcoin has been that the consensus mechanism based on proof-of-work (PoW) is **wasteful**.
 
-Critics typically point out that the whole ordeal is *hashes to ashes*, that the electricity consumption is equivalent to the total of a small country, and so on.
+Critics typically point out that the whole ordeal is _hashes to ashes_, that the electricity consumption is equivalent to the total of a small country, and so on.
 
-If one works the constraint into the system (as Satoshi did) of having *no trusted third-party*, it follows that the system must be backed by a *universally verifiable* reality.
+If one works the constraint into the system (as Satoshi did) of having _no trusted third-party_, it follows that the system must be backed by a _universally verifiable_ reality.
 
 That's what the anchoring to physical energy expenditure provides, in the form of electricity used for solving [Hashcash](https://en.wikipedia.org/wiki/Hashcash) puzzles.
 
-Furthermore, this consensus mechanism is remarkably *simple*. You can be in complete isolation from the rest of the world, even in a [bunker](https://gist.github.com/oleganza/8cc921e48f396515c6d6), and follow very basic rules and efficient verifications to arrive to the universal view of the database.
+Furthermore, this consensus mechanism is remarkably _simple_. You can be in complete isolation from the rest of the world, even in a [bunker](https://gist.github.com/oleganza/8cc921e48f396515c6d6), and follow very basic rules and efficient verifications to arrive to the universal view of the database.
 
 The cost of running Bitcoin is the exact cost of running a system that puts all its trust in a network without privileged nodes.
 
@@ -154,7 +156,7 @@ If you produce surplus electricity, then **Bitcoin mining is your battery**.
 
 Adam Back, inventor of HashCash, has suggested in an interesting [thought experiment](https://bitcointalk.org/index.php?topic=911339.msg10007339#msg10007339) that one can think of Bitcoin as an **universal element that represents proof-of-joules spent**.
 
-The combination of the above ideas might bring to fruition the vision held by the likes of Henry Ford and Thomas Edison of the *energy dollar*:
+The combination of the above ideas might bring to fruition the vision held by the likes of Henry Ford and Thomas Edison of the _energy dollar_:
 
 ![New York Times story from February 20, 1922 [50%]](/images/2016-in-review/ePCBk5ZmYM.png)
 
@@ -199,17 +201,17 @@ I came across a fascinating new take on the idea of consciousness and the evolut
 
 <Caption>Do we see reality as it is?</Caption>
 
-The central idea is that our reality is basically a set of *evolutionary hacks* that conferred a fitness advantage to our ancestors.
+The central idea is that our reality is basically a set of _evolutionary hacks_ that conferred a fitness advantage to our ancestors.
 
 An amusing example is given of an Australian Beetle attempts to mate with a beer bottle because it satisfied its primitive heuristics. It had to be brown, translucent and large. Oops.
 
 !["I could have sworn it was a beetle" [75%]](/images/2016-in-review/i2q5apnEho.jpg)
 
-Notice that I used the word *hack* to describe these adaptations to the environment. I actually took that from the presentation itself.
+Notice that I used the word _hack_ to describe these adaptations to the environment. I actually took that from the presentation itself.
 
 Despite Hoffman's specialty being the cognitive sciences, the explanation is peppered with symbols found in the computer science lingo.
 
-I find this collision between seemingly disparate worlds to be entirely *uncoincidental* and just as fascinating.
+I find this collision between seemingly disparate worlds to be entirely _uncoincidental_ and just as fascinating.
 
 Confusing perception with reality, he says, is like thinking that the reality of a computer is the icons and buttons on the screen, instead of the code and machinery behind it.
 
@@ -221,7 +223,7 @@ The takeaway: don't mistake the UI for the reality of the [computer behind it](h
 
 ### Turing Paper vs Quantum Paper [#turing-paper]
 
-A quantum computer is *just* an endless series of symbols written in different universes that interfere with one another. A beautiful description by [David Deutsch](https://en.wikipedia.org/wiki/David_Deutsch):
+A quantum computer is _just_ an endless series of symbols written in different universes that interfere with one another. A beautiful description by [David Deutsch](https://en.wikipedia.org/wiki/David_Deutsch):
 
 > Turing hoped that his abstracted-paper-tape model was so simple, so transparent and well defined, that it would not depend on any assumptions about physics that could conceivably be falsified, and therefore that it could become the basis of an abstract theory of computation that was independent of the underlying physics. ‘He thought,’ as Feynman once put it, ‘that he understood paper.’ But he was mistaken. Real, quantum-mechanical paper is wildly different from the abstract stuff that the Turing machine uses. The Turing machine is entirely classical, and does not allow for the possibility the paper might have different symbols written on it in different universes, and that those might interfere with one another  
 > — David Deutsch
@@ -250,7 +252,7 @@ I introduced Next.js in Vienna
 
 <Caption>What's Next?</Caption>
 
-And a few other talks 
+And a few other talks
 
 - [Infinite Deployment with Now](https://youtu.be/l9WBh4XFQRg?t=1h14m38s) at col4.0 in Bogotá, Colombia (Spanish)
 - [Programming the JavaScript Future](https://youtube.com/watch?v=pLRqfn-warM) at JSConf.uy
@@ -269,13 +271,13 @@ Inside it you can find every book that could possibly be conceived, including a 
 
 > From these two incontrovertible premises he deduced that the Library is total and that its shelves register all the possible combinations of **the twenty-odd orthographical symbols (a number which, though extremely vast, is not infinite)**: Everything: the minutely detailed history of the future, the archangels' autobiographies, the faithful catalogues of the Library, thousands and thousands of false catalogues, the demonstration of the fallacy of those catalogues, the demonstration of the fallacy of the true catalogue, the Gnostic gospel of Basilides, the commentary on that gospel, the commentary on the commentary on that gospel, the true story of your death, the translation of every book in all languages, the interpolations of every book in all books.
 
-Does it ring a bell? There are about <code>2 * 10^46</code> [meaningfully different English tweets](https://what-if.xkcd.com/34/), which is a lot, but I still see people making remarkably similar observations or even puns (many of which I suspect are "borrowed") on a daily basis.
+Does it ring a bell? There are about <code>2 \* 10^46</code> [meaningfully different English tweets](https://what-if.xkcd.com/34/), which is a lot, but I still see people making remarkably similar observations or even puns (many of which I suspect are "borrowed") on a daily basis.
 
 This observation led me to the creation of [**thoughtcomplete**](https://thoughtcomplete.now.sh/), autocompletion for your thoughts based on querying the [Twitter API](https://dev.twitter.com/rest/public).
 
 Needless to say, the suggestions it makes can be pretty amusing. I promise it will take you to places you didn't think you'd go to. Twitter's [rate-limiting](https://dev.twitter.com/rest/public/rate-limiting) permitting.
 
-In the realm of programming languages, it [occured to me](https://twitter.com/rauchg/status/778679671936262144) that JavaScript's library, [npm](https://npmjs.com), gets the closest:
+In the realm of programming languages, it [occured to me](https://twitter.com/andreneves/status/778679671936262144) that JavaScript's library, [npm](https://npmjs.com), gets the closest:
 
 ![Need a module to compare versions? How about all the possible ones? [22%]](/images/2016-in-review/mVLV4CAcnm.jpg)
 
@@ -283,7 +285,12 @@ In the realm of programming languages, it [occured to me](https://twitter.com/ra
 
 I created a hashing scheme for our customers&apos; unique IDs that yields beautiful gradients, demonstrated here by typing in my emails:
 
-<video src="https://video.twimg.com/tweet_video/C0vRamkVEAAr3Dl.mp4" mute="true" loop autoPlay />
+<video
+  src="https://video.twimg.com/tweet_video/C0vRamkVEAAr3Dl.mp4"
+  mute="true"
+  loop
+  autoPlay
+/>
 
 <Caption>Makes it easy to tell multiple accounts apart!</Caption>
 
@@ -303,7 +310,7 @@ I though they'd be an annoying gimmick (specially for work), but they turned out
 
 Emojis are one of the best tools for conveying nuance and emotion over this medium. Reactions allow for them to flow more naturally and are shown inline without creating clutter.
 
-They create *an opportunity to supply more information* to the channel. Without reactions, you might stay quiet and not share how you feel.
+They create _an opportunity to supply more information_ to the channel. Without reactions, you might stay quiet and not share how you feel.
 
 ### Universal Code Styles [#bad-ideas-coding-style]
 
@@ -314,6 +321,13 @@ Yes, I don't use semicolons anymore. I'm very glad to not spend any time at all 
 I look forward to applying this mindset to every language my teams and I develop with.
 
 <FootNotes>
-  <FootNote id="1">If there's a way to [hedge](https://en.wikipedia.org/wiki/Hedge_(finance)) the risky personal investment of launching a startup company, it surely must be to do it with people you love and respect.</FootNote>
-  <FootNote id="2">I think this section is particularly useful to analyze our own biases. I'll try to more diligently assemble it during 2017.</FootNote>
+  <FootNote id="1">
+    If there's a way to [hedge](https://en.wikipedia.org/wiki/Hedge_(finance))
+    the risky personal investment of launching a startup company, it surely must
+    be to do it with people you love and respect.
+  </FootNote>
+  <FootNote id="2">
+    I think this section is particularly useful to analyze our own biases. I'll
+    try to more diligently assemble it during 2017.
+  </FootNote>
 </FootNotes>

@@ -1,34 +1,8 @@
-# blog
+# andre
 
-This is the blog that powers `rauchg.com`, built on
+This is the site that powers `andre.com`, built on
 [next.js](https://nextjs.org/) and
 deployed to the cloud via [Vercel](https://vercel.com).
-
-## How to run
-
-First, install [Vercel CLI](https://vercel.com/download).
-
-### Development
-
-```
-vc dev
-```
-
-### Deployment
-
-#### Staging
-
-```bash
-vc
-```
-
-This is the equivalent of submitting a PR with the [GitHub integration](https://vercel.com/github)
-
-#### Production
-
-```bash
-vc --prod
-```
 
 This is the equivalent of `git push` to `master` (or merging a PR to master)
 

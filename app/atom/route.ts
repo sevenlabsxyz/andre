@@ -6,14 +6,14 @@ export async function GET() {
   return new Response(
     `<?xml version="1.0" encoding="utf-8"?>
   <feed xmlns="http://www.w3.org/2005/Atom">
-    <title>Guillermo Rauch</title>
+    <title>Andre Neves</title>
     <subtitle>Essays</subtitle>
     <link href="https://rauchg.com/atom" rel="self"/>
     <link href="https://rauchg.com/"/>
     <updated>${posts[0].date}</updated>
     <id>https://rauchg.com/</id>
     <author>
-      <name>Guillermo Rauch</name>
+      <name>Andre Neves</name>
       <email>rauchg@gmail.com</email>
     </author>
     ${posts.slice(0, max).reduce((acc, post) => {

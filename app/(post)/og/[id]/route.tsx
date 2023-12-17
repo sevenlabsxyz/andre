@@ -47,7 +47,7 @@ export async function GET(_req: Request, { params: { id } }) {
       >
         <header tw="flex text-[36px] w-full">
           <div tw="font-bold" style={font("Inter 600")}>
-            Guillermo Rauch
+            Andre Neves
           </div>
           <div tw="grow" />
           <div tw="text-[28px]">rauchg.com</div>

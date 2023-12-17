@@ -59,8 +59,8 @@ export default async function AboutOG() {
                 Guillermo Rauch
               </div>
               <div tw="flex mb-5" style={font("Roboto Mono 400")}>
-                <span tw="text-gray-400 mr-3">&mdash;</span> CEO and Founder of
-                Vercel
+                <span tw="text-gray-400 mr-3">&mdash;</span> CTO and Founder of
+                ZBD
               </div>
               <div tw="flex mb-5" style={font("Roboto Mono 400")}>
                 <span tw="text-gray-400 mr-3">&mdash;</span> Creator of Next.js,

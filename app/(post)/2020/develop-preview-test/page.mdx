@@ -1,12 +1,14 @@
 export const metadata = {
-  title: 'Develop, Preview, Test',
-  description: 'In this essay I want to make the case that prioritizing end-to-end (E2E) testing for the critical parts of your app will reduce risk and give you the best return. Further, I\'ll show how you can adopt this methodology in mere minutes.',
+  title: "Develop, Preview, Test",
+  description:
+    "In this essay I want to make the case that prioritizing end-to-end (E2E) testing for the critical parts of your app will reduce risk and give you the best return. Further, I'll show how you can adopt this methodology in mere minutes.",
   openGraph: {
-    title: 'Develop, Preview, Test',
-    description: 'In this essay I want to make the case that prioritizing end-to-end (E2E) testing for the critical parts of your app will reduce risk and give you the best return. Further, I\'ll show how you can adopt this methodology in mere minutes.',
-    images: [{ url: '/og/develop-preview-test' }],
-  }
-}
+    title: "Develop, Preview, Test",
+    description:
+      "In this essay I want to make the case that prioritizing end-to-end (E2E) testing for the critical parts of your app will reduce risk and give you the best return. Further, I'll show how you can adopt this methodology in mere minutes.",
+    images: [{ url: "/og/develop-preview-test" }],
+  },
+};
 
 A few years ago I tweeted a simple guideline that
 [challenged conventional wisdom](https://twitter.com/swyx/status/1261202288476971008)
@@ -42,18 +44,21 @@ In addition to integration tests, I want to now make the case that modern
 deployment workflows in combination with serverless testing solutions can
 now fully revert the conventional testing pyramid:
 
-<Image alt={
-  <span>
-    Martin Fowler's conventional{" "}
-    <a
-      href="https://martinfowler.com/articles/practical-test-pyramid.html#TheTestPyramid"
-      target="_blank"
-    >
-      testing pyramid
-    </a>
-    . What if 🐢 and 💲 went away?
-  </span>
-} src="/images/develop-preview-test/pyramid.jpg" />
+<Image
+  alt={
+    <span>
+      Martin Fowler's conventional{" "}
+      <a
+        href="https://martinfowler.com/articles/practical-test-pyramid.html#TheTestPyramid"
+        target="_blank"
+      >
+        testing pyramid
+      </a>
+      . What if 🐢 and 💲 went away?
+    </span>
+  }
+  src="/images/develop-preview-test/pyramid.jpg"
+/>
 
 As it turns out,
 [focusing on the customer first](https://blog.aboutamazon.com/company-news/2016-letter-to-shareholders)
@@ -91,17 +96,20 @@ effectively by focusing on incremental computation, where the underlying
 static files and serverless functions used to power a deployment are
 mostly re-used from deploy to deploy.
 
-<Image alt={
-  <span>
-    An example of a PR automatically deployed{" "}
-    <a
-      target="_blank"
-      href="https://github.com/rauchg/blog/pull/35#issuecomment-570270061"
-    >
-      for this very blog
-    </a>
-  </span>
-} src="/images/develop-preview-test/github-comment.jpg" />
+<Image
+  alt={
+    <span>
+      An example of a PR automatically deployed{" "}
+      <a
+        target="_blank"
+        href="https://github.com/rauchg/blog/pull/35#issuecomment-570270061"
+      >
+        for this very blog
+      </a>
+    </span>
+  }
+  src="/images/develop-preview-test/github-comment.jpg"
+/>
 
 Just like GitHub is capable of keeping the history of your code forever,
 so can Vercel. Because deploys are
@@ -147,14 +155,17 @@ using [Vercel](https://vercel.com) in combination with
 on top of GitHub.
 
 First, I'm going to define an end-to-end test to ascertain that my blog
-always contains the string "Guillermo Rauch" in the browser title. As I'm
+always contains the string "Andre Neves" in the browser title. As I'm
 writing this, it's not the case, so I expect this to fail.
 
 Checkly gives me full access to the Node and puppeteer APIs. Notice I
 don't have to write any ceremony, setup or scheduling logic. I'm "inside"
 the function that will later be invoked:
 
-<Image alt="The ENVIRONMENT_URL env variable will be populated with each preview deploy URL" src="/images/develop-preview-test/checkly.jpg" />
+<Image
+  alt="The ENVIRONMENT_URL env variable will be populated with each preview deploy URL"
+  src="/images/develop-preview-test/checkly.jpg"
+/>
 
 Then, I installed the
 [Checkly GitHub app](https://www.checklyhq.com/docs/cicd/github/#setting-up-your-github-integration)
@@ -169,18 +180,27 @@ As soon as I created my pull request, the check was already failing. In
 just a few seconds, I pushed, deployed, a headless browser simulating a
 visitor ran, and my error was exposed:
 
-<Image alt="I can also configure my testing check as mandatory and make this PR unmergeable" src="/images/develop-preview-test/failing-check.jpg" />
+<Image
+  alt="I can also configure my testing check as mandatory and make this PR unmergeable"
+  src="/images/develop-preview-test/failing-check.jpg"
+/>
 
 This happened with absolutely zero additional configuration. Vercel
 supplied a URL, Checkly tested it, GitHub was notified. After pushing
 again, the check re-runs automatically:
 
-<Image alt="Each commit gets its own deploy preview, and its own checks" src="/images/develop-preview-test/commits.jpg" />
+<Image
+  alt="Each commit gets its own deploy preview, and its own checks"
+  src="/images/develop-preview-test/commits.jpg"
+/>
 
 With my typo fixed, I'm free to merge. Merging to master will deploy my
 changes to `rauchg.com` automatically.
 
-<Image alt="After pressing the green button, we go live. With confidence." src="/images/develop-preview-test/github-green.jpg" />
+<Image
+  alt="After pressing the green button, we go live. With confidence."
+  src="/images/develop-preview-test/github-green.jpg"
+/>
 
 ## Conclusion [#conclusion]
 

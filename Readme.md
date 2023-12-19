@@ -1,6 +1,6 @@
 # andre
 
-This is the site that powers `andre.com`, built on
+This is the site that powers `andreneves.co`, built on
 [next.js](https://nextjs.org/) and
 deployed to the cloud via [Vercel](https://vercel.com).
 

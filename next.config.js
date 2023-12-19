@@ -23,6 +23,12 @@ module.exports = withMDX({
       },
       {
         protocol: "https",
+        hostname: "miro.medium.com",
+        port: "",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
         hostname: "abs.twimg.com",
         port: "",
         pathname: "/**",

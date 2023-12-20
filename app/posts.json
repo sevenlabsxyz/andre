@@ -12,13 +12,18 @@
     },
     {
       "id": "announcing-zbd-gg",
-      "date": "August 21, 2020",
+      "date": "November 20, 2020",
       "title": "Announcing zbd.gg"
     },
     {
       "id": "lightning-address",
-      "date": "August 21, 2021",
+      "date": "August 11, 2021",
       "title": "Introducing the Lightning Address"
+    },
+    {
+      "id": "lightning-summit",
+      "date": "July 15, 2023",
+      "title": "The Lightning Summit 2023"
     },
     {
       "id": "mit-bitcoin-expo-2022",
@@ -28,31 +33,41 @@
     {
       "id": "mit-bitcoin-expo-2023",
       "date": "June 5, 2023",
-      "title": "MIT Bitcoin Expo 2022"
+      "title": "MIT Bitcoin Expo 2023"
+    },
+    {
+      "id": "the-future-of-payments",
+      "date": "May 5, 2022",
+      "title": "The Future of Payments"
+    },
+    {
+      "id": "microstrategy-bitcoin-conference",
+      "date": "May 12, 2023",
+      "title": "MicroStrategy Bitcoin Conference 2023"
     },
     {
       "id": "setup-nostr-relay",
-      "date": "January 5, 2022",
+      "date": "December 17, 2022",
       "title": "Setup a Nostr Relay"
     },
     {
-      "id": "tabconf-2023-keynote",
-      "date": "May 5, 2022",
+      "id": "tabconf-2022",
+      "date": "October 16, 2022",
       "title": "TabConf 2022 Keynote"
     },
     {
       "id": "paid-nostr-relay",
-      "date": "May 5, 2023",
-      "title": "Paid Nostr Relay"
+      "date": "February 2, 2023",
+      "title": "Setup a Paid Nostr Relay"
     },
     {
       "id": "rise-of-paid-nostr-relays",
-      "date": "May 5, 2023",
+      "date": "February 2, 2023",
       "title": "Rise of Paid Nostr Relays"
     },
     {
       "id": "replit-zbd-starter-kit",
-      "date": "May 5, 2023",
+      "date": "July 3, 2023",
       "title": "Replit and ZBD Starter Kit"
     },
     {

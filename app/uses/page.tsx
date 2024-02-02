@@ -9,6 +9,7 @@ export const metadata = {
     title: "Things I Use",
     description:
       "Gadgets, apps, and brands I use on a daily basis. A list of some favorite things.",
+    images: [{ url: "/og/making-the-web-faster" }],
   },
 };
 

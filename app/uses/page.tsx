@@ -1,6 +1,16 @@
-export const runtime = "edge";
-
 import Link from "next/link";
+
+export const runtime = "edge";
+export const metadata = {
+  title: "Things I Use",
+  description:
+    "Gadgets, apps, and brands I use on a daily basis. A list of some favorite things.",
+  openGraph: {
+    title: "Things I Use",
+    description:
+      "Gadgets, apps, and brands I use on a daily basis. A list of some favorite things.",
+  },
+};
 
 const INTRO = {
   Apps: "These are the apps I use the most and rely upon on a daily basis.",

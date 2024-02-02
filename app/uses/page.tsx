@@ -31,7 +31,9 @@ const USES = {
     "Mattermost",
     "Zed",
     "Figma",
+    "Raycast",
     "Signal",
+    "Telegram",
     "Spark",
   ],
   Tech: [

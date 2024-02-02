@@ -50,21 +50,23 @@ export default async function MainOG() {
             <div>views</div>
           </div>
 
-          {posts.map((post, i) => (
-            <div
-              key={post.id}
-              tw="flex py-6 text-[26px] border-gray-300 border-t w-full"
-            >
-              <div tw="flex text-gray-400 w-24">
-                {posts[i - 1] === undefined ||
-                getYear(post.date) !== getYear(posts[i - 1].date)
-                  ? getYear(post.date)
-                  : ""}
+          {posts
+            .sort((a, b) => getSeconds(b.date) - getSeconds(a.date))
+            .map((post, i) => (
+              <div
+                key={post.id}
+                tw="flex py-6 text-[26px] border-gray-300 border-t w-full"
+              >
+                <div tw="flex text-gray-400 w-24">
+                  {posts[i - 1] === undefined ||
+                  getYear(post.date) !== getYear(posts[i - 1].date)
+                    ? getYear(post.date)
+                    : ""}
+                </div>
+                <div tw="flex grow">{post.title}</div>
+                <div tw="flex text-gray-400 pl-7">{post?.viewsFormatted}</div>
               </div>
-              <div tw="flex grow">{post.title}</div>
-              <div tw="flex text-gray-400 pl-7">{post?.viewsFormatted}</div>
-            </div>
-          ))}
+            ))}
         </main>
       </div>
     ),
@@ -92,6 +94,11 @@ export default async function MainOG() {
 // lil helper to convert posts.json `date` to full year
 function getYear(date: string) {
   return new Date(date).getFullYear();
+}
+
+// lil helper to convert posts.json `date` to seconds
+function getSeconds(date: string) {
+  return new Date(date).getSeconds();
 }
 
 // lil helper for more succinct styles

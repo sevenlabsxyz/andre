@@ -51,7 +51,7 @@ export default async function MainOG() {
           </div>
 
           {posts
-            .sort((a, b) => getSeconds(b.date) - getSeconds(a.date))
+            .sort((a, b) => getTime(b.date) - getTime(a.date))
             .map((post, i) => (
               <div
                 key={post.id}
@@ -97,8 +97,8 @@ function getYear(date: string) {
 }
 
 // lil helper to convert posts.json `date` to seconds
-function getSeconds(date: string) {
-  return new Date(date).getSeconds();
+function getTime(date: string) {
+  return new Date(date).getTime();
 }
 
 // lil helper for more succinct styles

@@ -46,7 +46,17 @@ const USES = {
     "Theragun Mini (great for travel)",
     "iPad Pro 2022 (+ Pitaka accessories)",
   ],
-  Brands: ["Alo", "Aer", "Atoms", "Nike Air", "Suit Supply", "Apple", "Dior"],
+  Brands: [
+    "Alo",
+    "Aer",
+    "Atoms",
+    "Nike Air",
+    "Suit Supply",
+    "Apple",
+    "Dior",
+    "710 Labs",
+    "Cannabiotix",
+  ],
 };
 
 export default function Uses() {

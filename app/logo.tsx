@@ -1,21 +1,23 @@
 "use client";
-import { usePathname } from "next/navigation";
+
+import Image from "next/image";
 import Link from "next/link";
 
 export function Logo() {
-  const pathname = usePathname();
+  const NAME = "André Neves";
+
   return (
-    <span className="text-md md:text-lg whitespace-nowrap font-bold">
-      {pathname === "/" ? (
-        <span className="cursor-default pr-2">André Neves</span>
-      ) : (
-        <Link
-          href="/"
-          className="hover:bg-gray-200 dark:hover:bg-[#313131] active:bg-gray-300 dark:active:bg-[#242424] p-2 rounded-sm -ml-2 transition-[background-color]"
-        >
-          André Neves
-        </Link>
-      )}
-    </span>
+    <Link href="/" className="-ml-2 p-2 flex flex-row items-center">
+      <Image
+        alt={NAME}
+        width={30}
+        height={30}
+        className="rounded-full mr-2"
+        src={"https://i.imgur.com/glq48i7.jpeg"}
+      />
+      <span className="text-md md:text-lg whitespace-nowrap font-bold">
+        {NAME}
+      </span>
+    </Link>
   );
 }

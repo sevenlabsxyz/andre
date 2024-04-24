@@ -9,8 +9,6 @@ export function ThemeToggle() {
     undefined
   );
   const [currentTheme, setCurrentTheme] = useState<null | string>(null);
-  const [isHovering, setIsHovering] = useState(false);
-  const [isHoveringOverride, setIsHoveringOverride] = useState(false);
 
   const onMediaChange = useCallback(() => {
     const current = themeEffect();
@@ -47,38 +45,13 @@ export function ThemeToggle() {
 
   return (
     <>
-      {isHovering && (
-        <span
-          className={`
-            text-[9px]
-            text-gray-400
-            mr-[-5px]
-
-            /* mobile */
-            hidden
-
-            md:inline
-          `}
-        >
-          {preference === null
-            ? "System"
-            : preference === "dark"
-            ? "Dark"
-            : "Light"}
-        </span>
-      )}
-
       {/*
         the `theme-auto:` plugin is registered in `tailwind.config.js` and
         works similarly to the `dark:` prefix, which depends on the `theme-effect.ts` behavior
       */}
       <button
         aria-label="Toggle theme"
-        className={`inline-flex ${
-          isHovering && !isHoveringOverride
-            ? "bg-gray-200 dark:bg-[#313131]"
-            : ""
-        } active:bg-gray-300 transition-[background-color] dark:active:bg-[#242424] rounded-sm p-2 
+        className={`inline-flex active:bg-gray-300 transition-[background-color] dark:active:bg-[#242424] rounded-sm p-2 
           bg-gray-200
           dark:bg-[#313131]
           theme-system:!bg-inherit
@@ -88,8 +61,6 @@ export function ThemeToggle() {
         }`}
         onClick={ev => {
           ev.preventDefault();
-          // prevent the hover state from rendering
-          setIsHoveringOverride(true);
 
           let newPreference: string | null =
             currentTheme === "dark" ? "light" : "dark";
@@ -112,11 +83,6 @@ export function ThemeToggle() {
           });
 
           setPreference(newPreference);
-        }}
-        onMouseEnter={() => setIsHovering(true)}
-        onMouseLeave={() => {
-          setIsHovering(false);
-          setIsHoveringOverride(false);
         }}
       >
         <span className="sun-icon">
